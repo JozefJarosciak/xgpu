@@ -5,6 +5,7 @@ apt update
 apt -y install ocl-icd-opencl-dev
 apt -y install nano
 apt -y install htop
+apt -y install nvtop
 
 # Clone the repository and build the project
 git clone https://github.com/shanhaicoder/XENGPUMiner.git
