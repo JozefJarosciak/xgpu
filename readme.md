@@ -1,3 +1,3 @@
 ```
-apt update && apt -y install wget && wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/start.sh && chmod +x start.sh && ./start.sh
+apt update && apt -y install wget && wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/gpu.sh && chmod +x gpu.sh && ./gpu.sh
 ```
