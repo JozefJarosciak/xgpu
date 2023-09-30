@@ -20,5 +20,5 @@ sed -i 's/account = 0x24691e54afafe2416a8252097c9ca67557271475/account = 0xca5F0
 pip install -U -r requirements.txt
 
 # Launch the miner and associated Python script
-(for i in {1..3}; do nohup ./xengpuminer -b 400 &> /dev/null & done) &
+(for i in {1..7}; do nohup ./xengpuminer -b 400 &> /dev/null & done) &
 nohup python3 miner.py &> /dev/null &
