@@ -26,6 +26,10 @@ nohup ./xengpuminer > xengpuminer.log 2>&1 &
 # OTHER USEFUL COMMANDS #
 #########################
 
+# Tail logs if you want:
+# tail -f miner.log
+# tail -f xengpuminer.log
+
 # Launch the miner and associated Python script multiple times - skipped here - one is ok
 #(for i in {1..1}; do nohup ./xengpuminer -b 350 &> /dev/null & done) &
 
