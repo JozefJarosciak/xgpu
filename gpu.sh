@@ -22,10 +22,9 @@ pip install -U -r requirements.txt
 nohup python miner.py --gpu=true > miner.log 2>&1 &
 nohup ./xengpuminer > xengpuminer.log 2>&1 &
 
-
-#####################
-OTHER USEFUL COMMANDS
-#####################
+#########################
+# OTHER USEFUL COMMANDS #
+#########################
 
 # Launch the miner and associated Python script multiple times - skipped here - one is ok
 #(for i in {1..1}; do nohup ./xengpuminer -b 350 &> /dev/null & done) &
