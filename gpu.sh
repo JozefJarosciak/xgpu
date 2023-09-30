@@ -20,7 +20,7 @@ sed -i 's/account = 0x24691e54afafe2416a8252097c9ca67557271475/account = 0xca5F0
 # Install Python requirements
 pip install -U -r requirements.txt
 nohup python miner.py --gpu=true &> /dev/null &
-nohup ./xengpuminer
+nohup ./xengpuminer &> /dev/null &
 
 
 #####################
