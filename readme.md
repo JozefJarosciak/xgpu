@@ -2,10 +2,8 @@
 apt update && apt -y install wget && wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/gpu.sh && chmod +x gpu.sh && ./gpu.sh
 ```
 
+# USEFUL COMMANDS #
 
-#########################
-# OTHER USEFUL COMMANDS #
-#########################
 
 Tail logs:
 ```
