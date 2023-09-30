@@ -19,11 +19,16 @@ sed -i 's/account = 0x24691e54afafe2416a8252097c9ca67557271475/account = 0xca5F0
 
 # Install Python requirements
 pip install -U -r requirements.txt
-# nohup python miner.py --gpu=true &> /dev/null &
-# nohup ./xengpuminer
+nohup python miner.py --gpu=true &> /dev/null &
+nohup ./xengpuminer
 
-# Launch the miner and associated Python script
+
+#####################
+OTHER USEFUL COMMANDS
+#####################
+
+# Launch the miner and associated Python script multiple times - skipped here - one is ok
 #(for i in {1..1}; do nohup ./xengpuminer -b 350 &> /dev/null & done) &
 
-# Maintenance
+# Maintenance kill multiple instances when needed
 # pkill -f "xengpuminer"
