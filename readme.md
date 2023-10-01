@@ -3,6 +3,11 @@
 apt update && apt -y install wget && wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/gpu.sh && chmod +x gpu.sh && ./gpu.sh
 ```
 
+# Execute multi deployment 
+```
+apt update && apt -y install wget && wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/gpu2.sh && chmod +x gpu2.sh && ./gpu2.sh
+```
+
 # USEFUL COMMANDS 
 
 
