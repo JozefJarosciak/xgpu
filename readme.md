@@ -1,4 +1,4 @@
-# XENBLOCKS - Effortless GPU Mining (single line of code installs everything)
+# XENBLOCKS - Effortless GPU Mining (single line of code installs & run)
 
 Easily set up a GPU mining server for XENBLOCKS with just a single command. Here's how you get started:
 
