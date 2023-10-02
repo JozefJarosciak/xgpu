@@ -7,13 +7,15 @@ Easily set up a GPU mining server for XENBLOCKS with just a single command. Here
 
 2. **Update Your Address**:
    - Navigate to `gpu.sh` and replace the existing address with your own as illustrated below:
-   ![Setup Illustration](https://github.com/JozefJarosciak/xgpu/assets/3492464/4a337c5b-754f-4662-bae8-5b272762eb22)
+   ![image](https://github.com/JozefJarosciak/xgpu/assets/3492464/807a9935-17ec-4cd8-8dd3-bfff04b65060)
+
 
 3. **Kickstart Mining**:
-   - Now you're all set! Use the command below to get your new GPU server up and running—from 0 to full speed mining:
-   ```bash
+   - Now you're all set! Use the command below to get your new GPU server up and running—from 0 to full-speed mining 
+   - Note: of course replace (JozefJarosciak/xgpu/main/gpu.sh) with path to your repo
+   ```
    apt update && apt -y install wget && wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/gpu.sh && chmod +x gpu.sh && ./gpu.sh
-
+   ```
 
 
 # Execute multi deployment 
