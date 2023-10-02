@@ -16,7 +16,8 @@ Easily set up a GPU mining server for XENBLOCKS with just a single command. Here
    apt update && apt -y install wget && wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/gpu.sh && chmod +x gpu.sh && ./gpu.sh
    ```
 4. **Video DEMO**:
-https://youtu.be/oXrj8RKKyak
+   - Follow along with the video demonstration below to set up your mining server:
+   [![Video Demo](https://img.youtube.com/vi/oXrj8RKKyak/0.jpg)](https://youtu.be/oXrj8RKKyak)
 
 
 # Execute multi deployment 
