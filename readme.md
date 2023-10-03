@@ -17,6 +17,12 @@ Easily set up a GPU mining server for XENBLOCKS mining. A single line of code in
    ```
    apt update && apt -y install wget && wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/gpu.sh && chmod +x gpu.sh && ./gpu.sh
    ```
+or vast.ai:
+   ```
+sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast.sh && sudo chmod +x vast.sh && sudo ./vast.sh
+   ```
+
+   
 4. **Video DEMO**:
    - Follow along with the video demonstration below to set up your mining server:
    [![Video Demo](https://img.youtube.com/vi/oXrj8RKKyak/0.jpg)](https://youtu.be/oXrj8RKKyak)
