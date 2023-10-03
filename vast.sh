@@ -20,5 +20,5 @@ sed -i 's/account = 0x24691e54afafe2416a8252097c9ca67557271475/account = 0xca5F0
 
 # Install Python requirements
 sudo pip install -U -r requirements.txt
-sudo nohup python miner.py --gpu=true > miner.log 2>&1 &
+sudo nohup python3 miner.py --gpu=true > miner.log 2>&1 &
 sudo nohup ./xengpuminer > xengpuminer.log 2>&1 &
