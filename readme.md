@@ -19,7 +19,7 @@ Easily set up a GPU mining server for XENBLOCKS mining. A single line of code in
    ```
 
 3. **Kickstart Mining - vast.ai (verified)**:   
-   or vast.ai:
+   vast.ai (single GPU):
       ```
    sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast.sh && sudo chmod +x vast.sh && sudo ./vast.sh
       ```
