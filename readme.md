@@ -22,6 +22,11 @@ or vast.ai:
 sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast.sh && sudo chmod +x vast.sh && sudo ./vast.sh
    ```
 
+or vast3.ai:
+   ```
+sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast3.sh && sudo chmod +x vast3.sh && sudo ./vast3.sh
+   ```
+
    
 4. **Video DEMO**:
    - Follow along with the video demonstration below to set up your mining server:
