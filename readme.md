@@ -17,15 +17,16 @@ Easily set up a GPU mining server for XENBLOCKS mining. A single line of code in
    ```
    apt update && apt -y install wget && wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/gpu.sh && chmod +x gpu.sh && ./gpu.sh
    ```
-or vast.ai:
-   ```
-sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast.sh && sudo chmod +x vast.sh && sudo ./vast.sh
-   ```
-
-or vast3.ai:
-   ```
-sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast3.sh && sudo chmod +x vast3.sh && sudo ./vast3.sh
-   ```
+   
+   or vast.ai:
+      ```
+   sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast.sh && sudo chmod +x vast.sh && sudo ./vast.sh
+      ```
+   
+   or vast2.ai (for 8 X GPU):
+      ```
+   sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast2.sh && sudo chmod +x vast2.sh && sudo ./vast2.sh
+      ```
 
    
 4. **Video DEMO**:
