@@ -10,14 +10,15 @@ Easily set up a GPU mining server for XENBLOCKS mining. A single line of code in
    - ![image](https://github.com/JozefJarosciak/xgpu/assets/3492464/5ddc43df-4e40-44b9-9aa9-4584e2e1b724)
 
 
-3. **Kickstart Mining**:
+3. **Kickstart Mining - runpod.io (unverified)**:
    - Now you're all set!
    - Use a single line command below to get a new GPU server up and running (from 0 to full-speed mining with one press of a button).
    - Note: of course replace (JozefJarosciak/xgpu/main/gpu.sh) with path to your repo
    ```
    apt update && apt -y install wget && wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/gpu.sh && chmod +x gpu.sh && ./gpu.sh
    ```
-   
+
+3. **Kickstart Mining - vast.ai (verified)**:   
    or vast.ai:
       ```
    sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast.sh && sudo chmod +x vast.sh && sudo ./vast.sh
