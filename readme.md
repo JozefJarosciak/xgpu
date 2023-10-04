@@ -52,4 +52,6 @@ tail -f /XENGPUMiner/xengpuminer.log or tail -f /root/XENGPUMiner/xengpuminer.lo
 Maintenance kill multiple instances when needed
 ```
 pkill -f "xengpuminer"
+pkill -f "python3"
+mv XENGPUMiner XENGPUMiner2
 ```
