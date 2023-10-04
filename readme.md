@@ -45,8 +45,9 @@ apt update && apt -y install wget && wget https://raw.githubusercontent.com/Joze
 
 Tail logs:
 ```
-tail -f /XENGPUMiner/miner.log  or tail -f /root/XENGPUMiner/miner.log
-tail -f /XENGPUMiner/xengpuminer.log or tail -f /root/XENGPUMiner/xengpuminer.log
+tail -f /root/XENGPUMiner/miner.log
+tail -f /root/XENGPUMiner/xengpuminer.log
+tail -f /root/XENGPUMiner/xengpuminer-0.log (to xengpuminer-7.log)
 ```
 
 Maintenance kill multiple instances when needed
