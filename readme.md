@@ -2,15 +2,10 @@
 
 Easily set up a GPU mining server for XENBLOCKS mining. A single line of code installs all dependencies and executes GPU mining. Here's how you get started:
 
-1. **Clone this Repository**: 
+1. **VAST.AI Mining - vast.ai (verified)**:
    - First, clone this repository to your own public repository.
-
-2. **Update Your Address**:
-   - Navigate to your repo, open `runpod.sh` or `vast.sh` (depending on where you mine) and replace the existing address with your own:
+   - Navigate to your repo, open `vast.sh` (depending on where you mine or vast4.sh or vast8.sh, depending on number of GPUs) and replace the existing address with your own:
    - ![image](https://github.com/JozefJarosciak/xgpu/assets/3492464/5ddc43df-4e40-44b9-9aa9-4584e2e1b724)
-
-
-3. **VAST.AI Mining - vast.ai (verified)**:
    - Go to Vast.ai, select Templates / Cuda:12.0.1-Devel-Ubuntu20.04 option:
       ![image](https://github.com/JozefJarosciak/xgpu/assets/3492464/cf8fb6fa-3747-4777-aafc-5d025f4f12ce)
    - Then under machines select the image you want. If you select 'unverified machines' you may find those that are a better deal:
@@ -34,13 +29,14 @@ Easily set up a GPU mining server for XENBLOCKS mining. A single line of code in
    sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast8.sh && sudo chmod +x vast8.sh && sudo ./vast8.sh
       ```
 
-5. **VAST.AI Video DEMO**:
+1.1 **VAST.AI Video DEMO**:
    
 [![Video Name](http://img.youtube.com/vi/gCqFkxDgpMQ/0.jpg)](http://www.youtube.com/watch?v=gCqFkxDgpMQ "Video Name")
 
    
 
-7. **RUNPOD Mining - runpod.io (unverified)**:
+2. **RUNPOD Mining - runpod.io (unverified)**:
+  - Same as above, just update `runpod.sh` file with your address
    ```
    apt update && apt -y install wget && wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/runpod.sh && chmod +x runpod.sh && ./runpod.sh
    ```
