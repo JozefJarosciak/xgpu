@@ -31,11 +31,12 @@ Easily set up a GPU mining server for XENBLOCKS mining. A single line of code in
       ```
 
 5. **VAST.AI Video DEMO**:
+   
 [![Video Name](http://img.youtube.com/vi/gCqFkxDgpMQ/0.jpg)](http://www.youtube.com/watch?v=gCqFkxDgpMQ "Video Name")
 
    
 
-6. **RUNPOD Mining - runpod.io (unverified)**:
+7. **RUNPOD Mining - runpod.io (unverified)**:
    ```
    apt update && apt -y install wget && wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/runpod.sh && chmod +x runpod.sh && ./runpod.sh
    ```
