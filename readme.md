@@ -3,7 +3,7 @@ Easily set up a GPU mining server for XENBLOCKS mining. A single line of code in
 # XENBLOCKS - Effortless GPU Mining on VAST.AI
 1. **VAST.AI Mining - vast.ai (verified)**:
    - First, clone this repository to your own public repository.
-   - Navigate to your repo, open `vast.sh` (depending on where you mine or vast4.sh or vast8.sh, depending on number of GPUs) and replace the existing address with your own:
+   - Navigate to your repo, open `vast.sh` (depending on where you mine or vast4.sh or vast8.sh, depending on the number of GPUs) and replace the existing address with your own:
    - ![image](https://github.com/JozefJarosciak/xgpu/assets/3492464/5ddc43df-4e40-44b9-9aa9-4584e2e1b724)
    - Go to Vast.ai, select Templates / Cuda:12.0.1-Devel-Ubuntu20.04 option:
       ![image](https://github.com/JozefJarosciak/xgpu/assets/3492464/cf8fb6fa-3747-4777-aafc-5d025f4f12ce)
@@ -11,7 +11,7 @@ Easily set up a GPU mining server for XENBLOCKS mining. A single line of code in
       ![image](https://github.com/JozefJarosciak/xgpu/assets/3492464/1d7a937c-8f64-453b-8ff1-b8b169f427df)
    - Now you're all set!
    - Use a single line command below to get a new GPU server up and running (from 0 to full-speed mining with one press of a button).
-   - Note: of course replace (JozefJarosciak/xgpu/main/gpu.sh) with path to your repo
+   - Note: of course replace (JozefJarosciak/xgpu/main/vast.sh, or vash4.sh or vast8.sh) with a path to your repo
      
    For single GPU use vast.sh:
       ```
@@ -48,13 +48,25 @@ Tail logs:
 tail -f /root/XENGPUMiner/miner.log
 tail -f /root/XENGPUMiner/xengpuminer.log
 tail -f /root/XENGPUMiner/xengpuminer-0.log (to xengpuminer-7.log)
-wget https://raw.githubusercontent.com/shanhaicoder/XENGPUMiner/main/miner.py
-sudo nohup python3 miner.py --gpu=true > miner.log 2>&1 &
 ```
 
-Maintenance kill multiple instances when needed
+Download the latest miner.py file only:
+```
+wget https://raw.githubusercontent.com/shanhaicoder/XENGPUMiner/main/miner.py
+```
+
+Maintenance - this is how you can kill multiple instances when needed
 ```
 pkill -f "xengpuminer"
 pkill -f "python3"
+```
+
+Start Miner.py in the background (in case you needed to stop it):
+```
+sudo nohup python3 miner.py --gpu=true > miner.log 2>&1 &
+```
+
+Renaming directory:
+```
 mv XENGPUMiner XENGPUMiner2
 ```
