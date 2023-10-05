@@ -11,6 +11,10 @@ Easily set up a GPU mining server for XENBLOCKS mining. A single line of code in
 
 
 3. **VAST.AI Mining - vast.ai (verified)**:
+   - Go to Vast.ai, select Templates / Cuda:12.0.1-Devel-Ubuntu20.04 option:
+      ![image](https://github.com/JozefJarosciak/xgpu/assets/3492464/cf8fb6fa-3747-4777-aafc-5d025f4f12ce)
+   - Then under machines select the image you want. If you select 'unverified machines' you may find those that are a better deal:
+      ![image](https://github.com/JozefJarosciak/xgpu/assets/3492464/1d7a937c-8f64-453b-8ff1-b8b169f427df)
    - Now you're all set!
    - Use a single line command below to get a new GPU server up and running (from 0 to full-speed mining with one press of a button).
    - Note: of course replace (JozefJarosciak/xgpu/main/gpu.sh) with path to your repo
