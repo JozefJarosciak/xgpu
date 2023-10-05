@@ -1,7 +1,6 @@
-# XENBLOCKS - Effortless GPU Mining
-
 Easily set up a GPU mining server for XENBLOCKS mining. A single line of code installs all dependencies and executes GPU mining. Here's how you get started:
 
+# XENBLOCKS - Effortless GPU Mining on VAST.AI
 1. **VAST.AI Mining - vast.ai (verified)**:
    - First, clone this repository to your own public repository.
    - Navigate to your repo, open `vast.sh` (depending on where you mine or vast4.sh or vast8.sh, depending on number of GPUs) and replace the existing address with your own:
@@ -14,17 +13,17 @@ Easily set up a GPU mining server for XENBLOCKS mining. A single line of code in
    - Use a single line command below to get a new GPU server up and running (from 0 to full-speed mining with one press of a button).
    - Note: of course replace (JozefJarosciak/xgpu/main/gpu.sh) with path to your repo
      
-   vast.ai (for single GPU use vast.sh):
+   For single GPU use vast.sh:
       ```
    sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast.sh && sudo chmod +x vast.sh && sudo ./vast.sh
       ```
 
-   vast.ai (for 4 X GPU use vast4.sh):
+   For 4 X GPU use vast4.sh:
       ```
    sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast4.sh && sudo chmod +x vast4.sh && sudo ./vast4.sh
       ```      
 
-   vast.ai (for 8 X GPU use vast8.sh):
+   For 8 X GPU use vast8.sh:
       ```
    sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast8.sh && sudo chmod +x vast8.sh && sudo ./vast8.sh
       ```
@@ -34,8 +33,8 @@ Easily set up a GPU mining server for XENBLOCKS mining. A single line of code in
 [![Video Name](http://img.youtube.com/vi/gCqFkxDgpMQ/0.jpg)](http://www.youtube.com/watch?v=gCqFkxDgpMQ "Video Name")
 
    
-
-2. **RUNPOD Mining - runpod.io (unverified)**:
+# XENBLOCKS - Effortless GPU Mining on RUNPOD.IO
+1. **RUNPOD Mining - runpod.io (unverified)**:
   - Same as above, just update `runpod.sh` file with your address
    ```
    apt update && apt -y install wget && wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/runpod.sh && chmod +x runpod.sh && ./runpod.sh
