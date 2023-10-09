@@ -4,6 +4,7 @@
 apt update
 apt -y install ocl-icd-opencl-dev
 apt -y install nano
+apt -y install screen
 apt -y install htop
 apt -y install nvtop
 apt -y install cmake
