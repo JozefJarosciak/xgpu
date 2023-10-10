@@ -37,7 +37,7 @@ Easily set up a GPU mining server for XENBLOCKS mining. A single line of code in
 1. **RUNPOD Mining - runpod.io (unverified)**:
   - Same as above, just update `runpod.sh` file with your address
    ```
-   apt update && apt -y install wget && wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/runpod.sh && chmod +x runpod.sh && ./runpod.sh
+   apt update && apt -y install wget && wget https://raw.githubusercontent.com/dirrrtyjesus/xgpu/main/runpod.sh && chmod +x runpod.sh && ./runpod.sh
    ```
 
 
