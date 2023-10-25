@@ -1,76 +1,43 @@
 #!/bin/bash
 
-# Update package list and install necessary packages
+sudo apt update > /dev/null 2>&1
+echo "STEP 1 of 10: Completed Packages Update"
 
-sudo apt update
-sleep 5
-echo "---------------------------"
+sudo apt -y install ocl-icd-opencl-dev > /dev/null 2>&1
+echo "STEP 2 of 10: Installed OpenCL"
 
-sudo apt -y install ocl-icd-opencl-dev
-sleep 5
-echo "---------------------------"
+sudo apt -y install nano  > /dev/null 2>&1
+echo "STEP 3 of 10: Installed Nano"
 
-sudo apt -y install nano
-sleep 5
-echo "---------------------------"
+sudo apt -y install cmake  > /dev/null 2>&1
+echo "STEP 4 of 10: Installed cMake"
 
-sudo apt -y install htop
-sleep 5
-echo "---------------------------"
+sudo apt -y install python3-pip > /dev/null 2>&1
+echo "STEP 5 of 10: Installed Python"
 
-# sudo apt -y install nvtop
-sudo apt -y install cmake
-sleep 5
-echo "---------------------------"
-
-sudo apt -y install python3-pip
-sleep 5
-echo "---------------------------"
-
-# Clone the repository and build the project
-git clone https://github.com/shanhaicoder/XENGPUMiner.git
-sleep 5
-echo "---------------------------"
+git clone https://github.com/shanhaicoder/XENGPUMiner.git > /dev/null 2>&1
+echo "STEP 6 of 10: Cloned https://github.com/shanhaicoder/XENGPUMiner.git"
 
 cd XENGPUMiner
-sleep 5
-echo "---------------------------"
+chmod +x build.sh > /dev/null 2>&1
+./build.sh > /dev/null 2>&1
+echo "STEP 7 of 10: Permissions set!"
 
-chmod +x build.sh
-sleep 5
-echo "---------------------------"
+sed -i 's/account = 0x24691e54afafe2416a8252097c9ca67557271475/account = 0xca5F023af4F822353A563Ae6a3591bA2024495E8/g' config.conf > /dev/null 2>&1
+echo "STEP 8 of 10: Replaced ETH address"
 
-./build.sh
-sleep 5
-echo "---------------------------"
+sudo pip install -U -r requirements.txt > /dev/null 2>&1
+echo "STEP 9 of 10: Installed Python"
 
-# Update the configuration file
-sed -i 's/account = 0x24691e54afafe2416a8252097c9ca67557271475/account = 0xca5F023af4F822353A563Ae6a3591bA2024495E8/g' config.conf
-sleep 5
-echo "---------------------------"
-
-# Install Python requirements
-sudo pip install -U -r requirements.txt
-sleep 5
-echo "---------------------------"
-
+echo "STEP 10 of 10: Starting Miner & GPU"
 sudo nohup python3 miner.py --gpu=true > miner.log 2>&1 &
-sleep 5
-echo "---------------------------"
-
 sudo nohup ./xengpuminer -d0 > xengpuminer-0.log 2>&1 &
-sleep 5
-echo "---------------------------"
-
 sudo nohup ./xengpuminer -d1 > xengpuminer-1.log 2>&1 &
-sleep 5
-echo "---------------------------"
-
 sudo nohup ./xengpuminer -d2 > xengpuminer-2.log 2>&1 &
-sleep 5
-echo "---------------------------"
-
 sudo nohup ./xengpuminer -d3 > xengpuminer-3.log 2>&1 &
-sleep 5
-echo "---------------------------"
 
+echo "------------------------"
+echo "    MINING XENBLOCKS    "
+echo "------------------------"
+echo " "
+tail -f /root/XENGPUMiner/miner.log
