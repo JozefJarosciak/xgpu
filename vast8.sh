@@ -1,5 +1,10 @@
 #!/bin/bash
 
+echo "-------------------------"
+echo "       XENBLOCKS         "
+echo "    STARTING INSTALL     "
+echo "-------------------------"
+
 sudo apt update > /dev/null 2>&1
 echo "STEP 1 of 10: Completed Packages Update"
 
@@ -40,8 +45,9 @@ sudo nohup ./xengpuminer -d5 > xengpuminer-5.log 2>&1 &
 sudo nohup ./xengpuminer -d6 > xengpuminer-6.log 2>&1 &
 sudo nohup ./xengpuminer -d7 > xengpuminer-7.log 2>&1 &
 
-echo "------------------------"
-echo "    MINING XENBLOCKS    "
-echo "------------------------"
+echo "-------------------------"
+echo "    MINING  XENBLOCKS    "
+echo "     https://xen.pub     "
+echo "-------------------------"
 echo " "
 tail -f /root/XENGPUMiner/miner.log
