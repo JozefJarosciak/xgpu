@@ -60,3 +60,5 @@ echo "--------STARTED XENGPU 7-------------------"
 
 sudo nohup ./xengpuminer -d0 > xengpuminer-0.log 2>&1 &
 echo "--------STARTED XENGPU 8-------------------"
+
+tail -f /root/XENGPUMiner/miner.log
