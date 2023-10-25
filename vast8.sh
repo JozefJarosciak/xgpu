@@ -27,7 +27,7 @@ sed -i 's/account = 0x24691e54afafe2416a8252097c9ca67557271475/account = 0xca5F0
 echo "STEP 8 of 10: Replaced ETH address"
 
 sudo pip install -U -r requirements.txt > /dev/null 2>&1
-echo "STEP 9 of 10: Installed Python"
+echo "STEP 9 of 10: Installed Python Requirements"
 
 echo "STEP 10 of 10: Starting Miner & GPU"
 sudo nohup python3 miner.py --gpu=true > miner.log 2>&1 &
