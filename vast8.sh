@@ -1,9 +1,7 @@
 #!/bin/bash
 
-# Update package list and install necessary packages
-
 sudo apt update > /dev/null 2>&1
-echo "Completed Update"
+echo "Completed Packages Update"
 
 sudo apt -y install ocl-icd-opencl-dev > /dev/null 2>&1
 echo "Installed OpenCL"
@@ -14,20 +12,18 @@ echo "Installed Nano"
 sudo apt -y install htop > /dev/null 2>&1
 echo "Installed HTOP"
 
-# sudo apt -y install nvtop > /dev/null 2>&1
-sudo apt -y install cmake
+sudo apt -y install cmake  > /dev/null 2>&1
 echo "Installed cMake"
 
 sudo apt -y install python3-pip > /dev/null 2>&1
 echo "Installed Python"
 
-# Clone the repository and build the project
 git clone https://github.com/shanhaicoder/XENGPUMiner.git > /dev/null 2>&1
 echo "Cloned https://github.com/shanhaicoder/XENGPUMiner.git"
 
-cd XENGPUMiner > /dev/null 2>&1
+cd XENGPUMiner
 chmod +x build.sh > /dev/null 2>&1
-./build.sh
+./build.sh > /dev/null 2>&1
 echo "Set permissions - done!"
 
 # Update the configuration file
