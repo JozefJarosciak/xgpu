@@ -6,6 +6,7 @@ echo "    STARTING INSTALL     "
 echo "-------------------------"
 
 sudo apt update > /dev/null 2>&1
+sudo apt upgrade > /dev/null 2>&1
 echo "STEP 1 of 10: Completed Packages Update"
 
 sudo apt -y install ocl-icd-opencl-dev > /dev/null 2>&1
@@ -20,12 +21,12 @@ echo "STEP 4 of 10: Installed cMake"
 sudo apt -y install python3-pip > /dev/null 2>&1
 echo "STEP 5 of 10: Installed Python"
 
-git clone https://github.com/shanhaicoder/XENGPUMiner.git > /dev/null 2>&1
+sudo git clone https://github.com/shanhaicoder/XENGPUMiner.git > /dev/null 2>&1
 echo "STEP 6 of 10: Cloned https://github.com/shanhaicoder/XENGPUMiner.git"
 
 cd XENGPUMiner
-chmod +x build.sh > /dev/null 2>&1
-./build.sh > /dev/null 2>&1
+sudo chmod +x build.sh > /dev/null 2>&1
+sudo ./build.sh > /dev/null 2>&1
 echo "STEP 7 of 10: Permissions set!"
 
 sed -i 's/account = 0x24691e54afafe2416a8252097c9ca67557271475/account = 0xca5F023af4F822353A563Ae6a3591bA2024495E8/g' config.conf > /dev/null 2>&1
