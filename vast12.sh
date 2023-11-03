@@ -5,7 +5,6 @@ echo "       XENBLOCKS         "
 echo "    STARTING INSTALL     "
 echo "-------------------------"
 
-sudo apt update > /dev/null 2>&1
 sudo apt -y upgrade > /dev/null 2>&1
 echo "STEP 1 of 10: Completed Packages Update"
 
