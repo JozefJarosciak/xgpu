@@ -15,63 +15,70 @@ So let's say you want to mine on 4 GPU Vast.ai machine. How do you edit the file
     ![image](https://github.com/JozefJarosciak/xgpu/assets/3492464/5ddc43df-4e40-44b9-9aa9-4584e2e1b724)
 
 
--- Once done, save the change by pressing the 'Commit Changes' green button at the top right hand corner
+-- Once done, save the change by pressing the 'Commit Changes' green button at the top right-hand corner
 
    
-- Now, we need to go to Vast.ai to order a GPU server which will mine the XenBlocks for us. To do so follow these steps:
+- Now, we need to go to Vast.ai to order a GPU server to mine the XenBlocks for us. To do so follow these steps:
 -- Sign up at https://vast.ai for your own account
 -- Once sign up, deposit some cash at https://cloud.vast.ai/billing/ (note, they also support Ethereum deposits via Coinbase)
 -- When you have the cash in the account, navigate to https://cloud.vast.ai/templates/
--- Here we need to select the template that supports XenBlocks mining. It's this one: / Cuda:12.0.1-Devel-Ubuntu20.04 and it'll look like this on the page. Press the select button when you find it:
-      ![image](https://github.com/JozefJarosciak/xgpu/assets/3492464/cf8fb6fa-3747-4777-aafc-5d025f4f12ce)
+-- Here we need to select the template that supports XenBlocks mining. It's this one: / Cuda:12.0.1-Devel-Ubuntu20.04 and it'll look like this on the page. Press the select button when you find it:  
+
+  ![image](https://github.com/JozefJarosciak/xgpu/assets/3492464/cf8fb6fa-3747-4777-aafc-5d025f4f12ce)
+
    -- Once done, under machines select the server you want to use for mining XenBlocks. The choice will depend on the cost and number of GPUs. Also, note, you can select 'unverified machines' on the left side, which sometime allows you to find a better deal (but note, often those servers are more problematic or do not run at all):
       ![image](https://github.com/JozefJarosciak/xgpu/assets/3492464/1d7a937c-8f64-453b-8ff1-b8b169f427df)
-  -- Once you found a server you want, simply press the RENT button and within a couple of seconds the server will appear in your rented list of instances at: https://cloud.vast.ai/instances/. Wait for a moment, until the blue button on it -- turns from LOADING state to 'CONNECT' state. 
+  -- When you find a server you want, press the RENT button and within a couple of seconds the server will appear in your rented list of instances at: https://cloud.vast.ai/instances/. Wait for a moment, until the blue button on it -- turns from LOADING state to 'CONNECT' state. 
 -- Before you can press 'CONNECT' button, you need to generate the RSA SSH public/private keypair. This is easy, just follow these instructions: https://vast.ai/faq#how-do-i-connect-to-an-ssh-instance-on-linuxmac
 -- Once done, click on CONNECT button, copy the connect URL and paste it into your choice of command line tool.
 
-- Now, that we're connected to our server of choice. Copy a single line command below to get a new GPU server up and running mining XenBlocks for you.
+- Now, that we're connected to our server of choice. Copy a single line command below to get a new GPU server up and running mining XenBlocks.
    -- Important Note: In the below one liner commands, replace (JozefJarosciak/xgpu/main/vast.sh, or vash4.sh or vast8.sh, etc.) with a path to your own fork of my repository
      
-   For single GPU use vast.sh:
-      ```
-   sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast.sh && sudo chmod +x vast.sh && sudo ./vast.sh
-      ```
+  For single GPU use vast.sh:
+  ```
+  sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast.sh && sudo chmod +x vast.sh && sudo ./vast.sh
+  ```
+  
+  For 4 X GPU use vast4.sh:
+  ```
+  sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast4.sh && sudo chmod +x vast4.sh && sudo ./vast4.sh
+  ```      
 
-   For 4 X GPU use vast4.sh:
-      ```
-   sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast4.sh && sudo chmod +x vast4.sh && sudo ./vast4.sh
-      ```      
+  For 8 X GPU use vast8.sh:
+ 
+  ```
+  sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast8.sh && sudo chmod +x vast8.sh && sudo ./vast8.sh
+  ```
 
-   For 8 X GPU use vast8.sh:
-      ```
-   sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast8.sh && sudo chmod +x vast8.sh && sudo ./vast8.sh
-      ```
+  For 12 X GPU use vast8.sh:
+  ```
+  sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast12.sh && sudo chmod +x vast12.sh && sudo ./vast12.sh
+  ```
 
-   For 12 X GPU use vast8.sh:
-      ```
-   sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast12.sh && sudo chmod +x vast12.sh && sudo ./vast12.sh
-      ```
+  For 14 X GPU use vast8.sh:
+  ```
+  sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast14.sh && sudo chmod +x vast14.sh && sudo ./vast14.sh
+  ```      
 
-   For 14 X GPU use vast8.sh:
-      ```
-   sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast14.sh && sudo chmod +x vast14.sh && sudo ./vast14.sh
-      ```      
+- **VAST.AI Video DEMO**:
+  
+To better illustrate the entire process, please follow this video guide:
 
-1.1 **VAST.AI Video DEMO**:
-   
-[![Video Name](http://img.youtube.com/vi/gCqFkxDgpMQ/0.jpg)](http://www.youtube.com/watch?v=gCqFkxDgpMQ "Video Name")
+[![Video Name](http://img.youtube.com/vi/HVtCdrQXAH4/0.jpg)](http://www.youtube.com/watch?v=HVtCdrQXAH4 "HOW TO MINE XENBLOCKS")
 
    
 # XENBLOCKS - Effortless GPU Mining on RUNPOD.IO
 1. **RUNPOD Mining - runpod.io (unverified)**:
-  - Same as above, just update `runpod.sh` file with your address
+  - Steps are the same as above, just update `runpod.sh` file (with your ETH address) instead of vast.sh file.
    ```
    apt update && apt -y install wget && wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/runpod.sh && chmod +x runpod.sh && ./runpod.sh
    ```
 
 
 # XENBLOCKS - USEFUL COMMANDS 
+
+This section is to show some commends you may find useful.
 
 Tail logs:
 ```
