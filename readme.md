@@ -8,7 +8,9 @@ So let's say you want to mine on 4 GPU Vast.ai machine. How do you edit the file
 -- Once you have forked my original repository, navigate to your fork, and find the vast4.sh file in your own repository.
 -- To Edit the File: Open the file by clicking on it. Look for the pencil icon (Edit this file) in the upper right corner of the file view. Click on the pencil icon, which will open the web-based editor.
 -- Here you need to replace the existing ETH address with your own (as illustrated in this image):
+
     ![image](https://github.com/JozefJarosciak/xgpu/assets/3492464/5ddc43df-4e40-44b9-9aa9-4584e2e1b724)
+
 -- Once done, save the change by pressing the 'Commit Changes' green button at the top right hand corner
    
 - Now, we need to go to Vast.ai to order a GPU server which will mine the XenBlocks for us. To do so follow these steps:
