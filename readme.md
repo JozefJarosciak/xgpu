@@ -43,17 +43,17 @@ Now, we need to go to Vast.ai to order a GPU server to mine the XenBlocks for us
 
 - When you find a server you want, press the RENT button and within a couple of seconds the server will appear in your rented list of instances at: https://cloud.vast.ai/instances/. Wait for a moment, until the blue button on it -- turns from LOADING state to 'CONNECT' state. 
 
--- Before you can press 'CONNECT' button, you need to generate the RSA SSH public/private keypair. This is easy, just follow these instructions: https://vast.ai/faq#how-do-i-connect-to-an-ssh-instance-on-linuxmac
+- Before you can press 'CONNECT' button, you need to generate the RSA SSH public/private keypair. This is easy, just follow these instructions: https://vast.ai/faq#how-do-i-connect-to-an-ssh-instance-on-linuxmac
 
--- Once done, click on CONNECT button, copy the connect URL and paste it into your choice of command line tool.
+- Once done, click on CONNECT button, copy the connect URL and paste it into your choice of command line tool.
 
 
 
 
 **START MINING XENBLOCKS**
 
--- Now, that we're connected to our server of choice. Copy a single line command below to get a new GPU server up and running mining XenBlocks.
--- Important Note: In the below one liner commands, replace (JozefJarosciak/xgpu/main/vast.sh, or vash4.sh or vast8.sh, etc.) with a path to your own fork of my repository
+- Now, that we're connected to our server of choice. Copy a single line command below to get a new GPU server up and running mining XenBlocks.
+- Important Note: In the below one liner commands, replace (JozefJarosciak/xgpu/main/vast.sh, or vash4.sh or vast8.sh, etc.) with a path to your own fork of my repository
      
   For single GPU use vast.sh:
   ```
@@ -81,7 +81,7 @@ Now, we need to go to Vast.ai to order a GPU server to mine the XenBlocks for us
   sudo apt update && sudo apt -y install wget && sudo wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/vast14.sh && sudo chmod +x vast14.sh && sudo ./vast14.sh
   ```      
 
-**VAST.AI Video DEMO**:
+**VAST.AI - VIDEO DEMO**:
   
 - To better illustrate the entire process, please follow this video guide:
 
@@ -91,7 +91,9 @@ Now, we need to go to Vast.ai to order a GPU server to mine the XenBlocks for us
 
    
 # XENBLOCKS GPU Mining on RUNPOD.IO
-1. **RUNPOD Mining - runpod.io (unverified)**:
+
+**RUNPOD Mining - runpod.io (unverified)**:
+
   - Steps are the same as above, just update `runpod.sh` file (with your ETH address) instead of vast.sh file.
    ```
    apt update && apt -y install wget && wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/runpod.sh && chmod +x runpod.sh && ./runpod.sh
