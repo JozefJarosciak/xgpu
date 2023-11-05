@@ -3,15 +3,21 @@
    - If you don't have your own GithHub account, sign up at [https://github.com](https://github.com/join)
    - Once signed up, login to your GitHub account and fork my repo to your own public repository. Forking repository is simple. Navigate to https://github.com/JozefJarosciak/xgpu, then in the top-right corner of the page, you will find a button labeled "Fork". Click on this button. GitHub will take a few moments to create a copy of my repository in your own account. You will be redirected to the new fork in your GitHub account once it's done.
 
-   - Navigate to the forked repository. In there you'll find several files named `vast.sh` (..., vast4.sh, vast8.sh, etc.). Each is named by the number of GPUs it support. So if you're planning to mine on a single GPU Vast.ai machine, we'll need to edit `vast.sh`. If you're planning to mine on 4 GPU Vast.ai machine, you'll need to edit 'vast4.sh' file. 
+   - Navigate to the forked repository. In there you'll find several files named `vast.sh` (..., vast4.sh, vast8.sh, etc.). Each is named by the number of GPUs it support. So if you're planning to mine on a single GPU Vast.ai machine, we'll need to edit `vast.sh`. If you're planning to mine on 4 GPU Vast.ai machine, you'll need to edit 'vast4.sh' file.
+     
 So let's say you want to mine on 4 GPU Vast.ai machine. How do you edit the file? 
+
 -- Once you have forked my original repository, navigate to your fork, and find the vast4.sh file in your own repository.
+
 -- To Edit the File: Open the file by clicking on it. Look for the pencil icon (Edit this file) in the upper right corner of the file view. Click on the pencil icon, which will open the web-based editor.
+
 -- Here you need to replace the existing ETH address with your own (as illustrated in this image):
 
     ![image](https://github.com/JozefJarosciak/xgpu/assets/3492464/5ddc43df-4e40-44b9-9aa9-4584e2e1b724)
 
+
 -- Once done, save the change by pressing the 'Commit Changes' green button at the top right hand corner
+
    
 - Now, we need to go to Vast.ai to order a GPU server which will mine the XenBlocks for us. To do so follow these steps:
 -- Sign up at https://vast.ai for your own account
