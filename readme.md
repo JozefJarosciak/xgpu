@@ -22,7 +22,7 @@ So let's say you want to mine on a 4 GPU Vast.ai machine. How do you edit the fi
 - To Edit the File: Open the file by clicking on it. Look for the pencil icon (Edit this file) in the upper right corner of the file view. Click on the pencil icon, which will open the web-based editor.
 
 - Here you need to replace the existing ETH address with your own (as illustrated in this image):
-![image](https://github.com/JozefJarosciak/xgpu/assets/3492464/5ddc43df-4e40-44b9-9aa9-4584e2e1b724)
+![image](https://github.com/JozefJarosciak/xgpu/assets/3492464/133ff8fd-4903-45f2-9967-6d81956ff2a3)
 
 - Once done, save the change by pressing the 'Commit Changes' green button at the top right-hand corner
 
