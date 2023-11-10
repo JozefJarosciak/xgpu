@@ -43,7 +43,9 @@ Now, we need to go to Vast.ai to order a GPU server to mine the XenBlocks for us
 
 - When you find a server you want, press the RENT button and within a couple of seconds the server will appear in your rented list of instances at: https://cloud.vast.ai/instances/. Wait for a moment, until the blue button on it -- turns from LOADING state to 'CONNECT' state. 
 
-- Before you can press 'CONNECT' button, you need to generate the RSA SSH public/private keypair. This is easy, just follow these instructions: https://vast.ai/faq#how-do-i-connect-to-an-ssh-instance-on-linuxmac
+- Before you can press 'CONNECT' button, you need to generate the RSA SSH public/private keypair.
+  This is easy, just follow these instructions for Linux: https://vast.ai/faq#how-do-i-connect-to-an-ssh-instance-on-linuxmac
+  Or the following instructions if you're planning to connect from Windows: https://vast.ai/docs/guides/windows-ssh-scp-guide
 
 - Once done, click on CONNECT button, copy the connect URL and paste it into your choice of command line tool.
 
