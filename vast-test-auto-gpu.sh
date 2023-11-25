@@ -39,8 +39,8 @@ echo "STEP 10 of 10: Starting Miner & GPU"
 # Start the Python miner
 sudo nohup python3 miner.py --gpu=true > miner.log 2>&1 &
 
-# Detect the number of GPUs (assuming GPUs are either NVIDIA, AMD, or Intel)
-num_gpus=$(lspci | grep -E 'VGA|3D' | wc -l)
+# Detect the number of GPUs
+num_gpus=$(lspci | grep -i nvidia | wc -l)
 
 # Start a miner for each GPU
 for gpu_id in $(seq 0 $((num_gpus - 1)))
