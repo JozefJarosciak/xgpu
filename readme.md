@@ -101,7 +101,7 @@ Now, we need to go to Vast.ai to order a GPU server to mine the XenBlocks. To do
 
   The steps are the same as above, just update `runpod.sh` file (with your ETH address) instead of vast.sh file.
    ```
-   apt update && apt -y install wget && wget https://raw.githubusercontent.com/JozefJarosciak/xgpu/main/runpod.sh && chmod +x runpod.sh && ./runpod.sh
+   apt update && apt -y install wget && wget https://raw.githubusercontent.com/dirrrtyjesus/xgpu/main/runpod.sh && chmod +x runpod.sh && ./runpod.sh
    ```
 
 
